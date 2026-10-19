@@ -11,9 +11,13 @@ body{
     align-items: center;
     justify-content: center;
     display:flex;
+    background-position: center;    
+    background-size: auto 200%;
+    background-repeat: no-repeat;
 }
 
 #bookshelf1{
+    background-image: url(assets/bookshelf/cropped.png);
     position: absolute;
     left:0;
 }
@@ -21,6 +25,8 @@ body{
 #bookshelf2{
     position: absolute;
     right:0;
+    background-size: auto 200%;
+    background-image: url(assets/bookshelf/cropped-2.png);
 }
 
 #head{
