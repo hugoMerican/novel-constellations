@@ -44,6 +44,20 @@ nav li :hover{
     text-decoration: underline;
 }
 
+#navlist{
+    cursor: default;
+    transition: 0.3s ease;
+}
+
 main{
     padding: 0 40px;
+}
+
+main h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+}
+
+main p{
+    font-family: "DM Sans", serif;
 }
