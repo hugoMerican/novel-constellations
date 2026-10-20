@@ -3,8 +3,8 @@ body{
 }
 
 .bookshelf{
-    width:280px;
-    height:400px;
+    width:400px;
+    height:700px;
     background-color: #8B5E3C;
     padding:0rem;
     margin:0;
@@ -12,7 +12,7 @@ body{
     justify-content: center;
     display:flex;
     background-position: center;    
-    background-size: auto 200%;
+    background-size: auto 150%;
     background-repeat: no-repeat;
 }
 
@@ -25,7 +25,6 @@ body{
 #bookshelf2{
     position: absolute;
     right:0;
-    background-size: auto 200%;
     background-image: url(assets/bookshelf/cropped-2.png);
 }
 
@@ -34,10 +33,10 @@ body{
     width:200px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: red;
-    left:50%;
-    transform: translateX(-50%) translateY(100px);
-    align-items: center;
-    justify-content: center;
-    display:flex;
+    background-color: transparent;
+    left: 750px;
+    transform: translate(-50%,2000px);
+    background-image: url(assets/silhouette.svg);
+    background-repeat: no-repeat;
+    transform: scale(3);
 }
