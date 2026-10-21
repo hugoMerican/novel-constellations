@@ -1,0 +1,17 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #30466C;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+}
+

@@ -2,6 +2,29 @@
     --parchment : #f6f2e9;
 }
 
+/*Non Shape Section*/
+html{
+    scroll-behavior: smooth;
+    background-color: var(--parchment);
+}
+
+h1{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* .img-box{
+    background:  url(assets/astro-background.png) center center;
+    background-size: cover;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/*Shape Section*/
+
 body{
     background-color: var(--parchment);
 }
@@ -39,6 +62,7 @@ body{
     border-radius: 50%;
     background-color: transparent;
     left: 750px;
+    top: 200px;
     background-image: url(assets/silhouette.svg);
     background-repeat: no-repeat;
     transform: scale(3) translate(-10px,50px);
@@ -49,7 +73,11 @@ body{
     width:550px;
     height:750px;
     left:480px;
-    top:70px;
+    top:80px;
     background: linear-gradient(#080F29, #30466C);
     border: 2px solid #8B5E3C;
-}
+    cursor: pointer;
+    transform-origin: center;
+    transition: transform 1.2s ease-in;
+    border-radius:10%;
+} 
