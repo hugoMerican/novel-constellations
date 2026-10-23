@@ -42,6 +42,11 @@ nav li{
     display: inline;
 }
 
+nav li a{
+    text-decoration: none;
+    color: inherit
+}
+
 nav li :hover{
     color: #cdae68;
     text-decoration: underline;
@@ -122,11 +127,20 @@ main p{
     font-size:30px;
     top:30%;
     transform: translate(-50%, -50%);
+    text-shadow: 0 0 25px white;
 }
 
+
+.star:hover .book-card,
+.star:focus .book-card {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .star-two{
-    left: 45%;
-    top: 50%;
+    left: 65%;
+    top: 10%;
 }
 
 .star-three{
@@ -154,4 +168,62 @@ main p{
     stroke: #cdae68;
     stroke-width: 0.4;
     opacity: 0.6;
+}
+
+/* book section */
+
+.book-card {
+    position: absolute;
+    top: 0;
+    left: 25px;
+
+    width: 160px;
+    padding: 12px;
+
+    background-color: #f6f2e9;
+    border: 1px solid #cdae68;
+    color: #352c29;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+}
+
+.book-card img {
+    width: 100%;
+    display: block;
+}
+
+.book-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.book-card p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.atlas-legend {
+    margin-top: 20px;
+    color: #352c29;
+}
+
+.atlas-legend > div {
+    border-top: 1px solid #cdae68;
+    padding: 12px 0;
+}
+
+.atlas-legend h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+
+.atlas-legend p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
 }

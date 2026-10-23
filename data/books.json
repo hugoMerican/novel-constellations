@@ -1,0 +1,28 @@
+{
+    "books": [
+        {
+            "id": "lotm",
+            "title": "Lord of The Mysteriess",
+            "coverUrl": "assets/books/LOTM.png",
+            "blurb": "Worldbuilding. Worldbuilding. WORLDBUILDING. Never before have I ever experienced a world that felt so alive.",
+            "personalNote": "Worldbuilding. Worldbuilding. WORLDBUILDING. Never before have I ever experienced a world that felt so alive.",
+            "featured": true
+        },
+        {
+            "id": "reverend-insanity",
+            "title": "Reverend Insanity",
+            "coverUrl": "assets/books/reverend-insanity.png",
+            "blurb": "The philosophical takes in the story itself is fairly subpar, however the forward thinking involved propel this novel to unseen heights",
+            "personalNote": "The philosophical takes in the story itself is fairly subpar, however the forward thinking involved propel this novel to unseen heights",
+            "featured": true
+        },
+        {
+            "id": "mol",
+            "title": "Mother of Learning",
+            "coverUrl": "assets/books/MOL.jpeg",
+            "blurb": "As the title may suggest, the core theme of hardwork and effort is not lost, however the true \"magic\" comes from how fantastic the character work is, particularly the growth of our main character",
+            "personalNote": "As the title may suggest, the core theme of hardwork and effort is not lost, however the true \"magic\" comes from how fantastic the character work is, particularly the growth of our main character",
+            "featured": true
+        }
+    ]
+}
