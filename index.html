@@ -2,96 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Novel Constellations</title>
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="assets/favicon.jpeg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-
 <body>
-    <header>
-        <h1>Novel Constellations</h1>
-        <nav>
-            <ul id="navlist">
-                <li><a>Library</a></li>
-                <li><a>Timeline</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
+    <div id="hero">
+        <div id="circle">
+                <span class="star" style="--angle: 0deg;">✦</span>
+                <span class="star" style="--angle: 90deg;">✦</span>
+                <span class="star" style="--angle: 180deg;">✦</span>
+                <span class="star" style="--angle: 270deg;">✦</span>
+                <div class="line" id="line1"><p>1</p></div>
+                <div class="line" id="line2"><p>2</p></div>
+                <div class="line" id="line3"><p>3</p></div>
+                <div class="faint-line" style="--angle: 0deg;"></div>
+                <div class="faint-line" style="--angle: 30deg;"></div>
+                <div class="faint-line" style="--angle: 60deg;"></div>
+                <div class="faint-line" style="--angle: 90deg;"></div>
+                <div class="faint-line" style="--angle: 120deg;"></div>
+                <div class="faint-line" style="--angle: 150deg;"></div>
+                <div class="faint-line" style="--angle: 15deg;"></div>
+                <div class="faint-line" style="--angle: 45deg;"></div>
+                <div class="faint-line" style="--angle: 75deg;"></div>
+                <div class="faint-line" style="--angle: 105deg;"></div>
+                <div class="faint-line" style="--angle: 135deg;"></div>
+                <div class="faint-line" style="--angle: 165deg;"></div>
+        </div>
+    </div>
 
-            <div class="about-text">
-                <h2>Everyone has stories that burn as bright as stars </h2>
-
-                <p>
-                    Novel Constellations showcases which stories burn the brightest for me and how the shapes in the sky of my mind
-                     have shaped my life
-                </p>
-
-                <p>
-                    Every story stays, but some carve the outline of the soul
-                </p>
-            </div>
-
-            <div class="about-visual">
-                <div class="night-sky">
-                    <svg class="connections"
-                    viewBox="0 0 100 100"
-                    preserveAspectRatio="none">
-                    <line data-from="0" data-to="1"/>
-                    <line data-from="1" data-to="2"/>
-                    <line data-from="2" data-to="4"/>
-                    <line data-from="4" data-to="3"/>
-                    <line data-from="3" data-to="0"/>
-                    </svg>
-                    <div class="star" data-book-id="lotm">
-                        <span class="star-symbol">*</span>
-
-                        <div class="book-card">
-                            <img src="assets/books/LOTM.png">
-                            <h3>Lord Of The Mysteries</h3>
-                            <p>Worldbuilding. Worldbuilding. WORLDBUILDING. Never before have I ever experienced a world that felt so alive.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="star star-two" data-book-id="reverend-insanity">
-                        <span class="star-symbol">*</span>
-
-                        <div class="book-card">
-                            <img src="assets/books/reverend-insanity.png">
-
-                            <h3>Reverend Insanity</h3>
-                            <p>The philosophical takes in the story itself is fairly subpar, however the forward thinking involved propel this novel to unseen heights</p>
-                        </div>
-                    </div>
-
-                    <div class="star star-three" data-book-id="mol">
-                        <span class="star-symbol">*</span>
-
-                        <div class="book-card">
-                            <img src="assets/books/MOL.jpeg">
-
-                            <h3>Mother of Learning</h3>
-                            <p>As the title may suggest, the core theme of hardwork and effort is not lost, however the true "magic" comes from how fantastic the character work is, particularly the growth of our main character</p>
-                        </div>
-                    </div>
-                    <div class="star star-four" >
-                        <span class="star-symbol">*</span>
-                    </div>
-                    <div class="star star-five" >
-                        <span class="star-symbol">*</span>
-                    </div>
-                </div>
-                <div class="atlas-legend">
-
-                </div>
-            </div>
-    </main>
-
-    <script src="script.js"></script>
 </body>
