@@ -23,6 +23,7 @@ html::-webkit-scrollbar {
     justify-content: center;
     display: flex;
     align-items: center;    
+    position: relative;
 }
 
 @keyframes rotateCircle {
@@ -155,4 +156,19 @@ html::-webkit-scrollbar {
     opacity: 0.8;
 }
 
+#Sagittarius{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width:500px;
+    height: 500px;
+}
 
+#Sagittarius line {
+    stroke: rgba(200, 220, 255, 0.35);
+    stroke-width: 1;
+}
+
+#Sagittarius circle {
+    fill: #f5f8ff;
+}
