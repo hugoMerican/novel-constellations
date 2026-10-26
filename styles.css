@@ -25,6 +25,16 @@ html::-webkit-scrollbar {
     align-items: center;    
 }
 
+@keyframes rotateCircle {
+    from {
+        transform: scale(1.4) rotate(0deg);
+    }
+
+    to {
+        transform: scale(1.4) rotate(360deg);
+    }
+}
+
 #circle {
     width: 500px;
     height: 500px;
@@ -32,6 +42,8 @@ html::-webkit-scrollbar {
     border-radius: 50%;
     position: relative;
     transform: scale(1.4);
+
+    animation:rotateCircle 180s linear infinite;
 }
 
 .line {
