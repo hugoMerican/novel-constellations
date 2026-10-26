@@ -23,6 +23,41 @@ body {
     height: auto;
 }
 
-.book :hover{
-    transform: scale(1.08);
+.book:hover {
+    transform: scale(1.08) rotate(0.9deg);
+}
+#center-star {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+
+    transform: translate(-50%, -50%);
+
+    filter: drop-shadow(0 0 6px rgba(220, 235, 255, 0.6));
+}
+
+#center-star::before,
+#center-star::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #f5f8ff;
+
+    clip-path: polygon(
+        50% 0%,
+        54% 44%,
+        100% 50%,
+        54% 56%,
+        50% 100%,
+        46% 56%,
+        0% 50%,
+        46% 44%
+    );
+}
+
+#center-star::after {
+    transform: rotate(45deg) scale(0.7);
+    opacity: 0.8;
 }
