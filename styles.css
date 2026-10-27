@@ -126,9 +126,6 @@ html::-webkit-scrollbar {
     height: 90px;
 
     transform: translate(-50%, -50%);
-    z-index: 5;
-    pointer-events: none;
-
     filter: drop-shadow(0 0 6px rgba(220, 235, 255, 0.6));
 }
 
@@ -154,4 +151,25 @@ html::-webkit-scrollbar {
 #center-star::after {
     transform: rotate(45deg) scale(0.7);
     opacity: 0.8;
+}
+.about-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.1);
+    backdrop-filter: blur(3px);
+    visibility: hidden;
+    align-items: center;
+    display: flex;
+}
+
+.about-overlay:target {
+    visibility: visible;
+}
+
+.about-overlay h1{
+    color:#e2c894
+}
+
+.about-overlay p{
+    color:#f5f8ff;
 }

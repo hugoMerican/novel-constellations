@@ -14,7 +14,7 @@ html::-webkit-scrollbar {
     left: 50%;
     width: 90px;
     height: 90px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     filter: drop-shadow(0 0 6px rgba(220, 235, 255, 0.6));
 }
 
@@ -45,6 +45,7 @@ html::-webkit-scrollbar {
 
 #timeline {
     width: 100%;
+
     display: flex;
     align-items: center;
     position: relative;
@@ -67,10 +68,10 @@ html::-webkit-scrollbar {
 
 
 .star {
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
     background-color: #f5f8ff;
-    cursor: pointer;
+    cursor: default;
     position: relative;
 
     clip-path: polygon(
@@ -107,7 +108,7 @@ html::-webkit-scrollbar {
     color: #e2c894
 }
 .info img {
-    width: 112px;
+    width: 200px;
     height: auto;
 }
 .star:hover + .info,
@@ -115,3 +116,4 @@ html::-webkit-scrollbar {
     opacity: 1;
     visibility: visible;
 }
+
