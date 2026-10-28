@@ -14,7 +14,7 @@ html::-webkit-scrollbar {
     left: 50%;
     width: 90px;
     height: 90px;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -38%);
     filter: drop-shadow(0 0 6px rgba(220, 235, 255, 0.6));
 }
 
@@ -40,6 +40,12 @@ html::-webkit-scrollbar {
 #center-star::after {
     transform: rotate(45deg) scale(0.7);
     opacity: 0.8;
+}
+#center-star:hover{
+    filter:
+        drop-shadow(0 0 10px rgba(220, 235, 255, 0.9))
+        drop-shadow(0 0 25px rgba(180, 210, 255, 0.6))
+        drop-shadow(0 0 40px rgba(180, 210, 255, 0.3));
 }
 
 

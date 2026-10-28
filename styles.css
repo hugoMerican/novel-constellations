@@ -31,7 +31,6 @@ html::-webkit-scrollbar {
     from {
         transform: scale(1.4) rotate(0deg);
     }
-
     to {
         transform: scale(1.4) rotate(360deg);
     }
@@ -44,7 +43,6 @@ html::-webkit-scrollbar {
     border-radius: 50%;
     position: relative;
     transform: scale(1.4);
-
     animation:rotateCircle 180s linear infinite;
 }
 
@@ -116,18 +114,15 @@ html::-webkit-scrollbar {
         translate(-50%, -50%)
         rotate(var(--angle));
 }
-
-
-
 #center-star {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 90px;
     height: 90px;
-
     transform: translate(-50%, -50%);
     filter: drop-shadow(0 0 6px rgba(220, 235, 255, 0.6));
+    transition: opacity 0.4s ease;
 }
 
 #center-star::before,
@@ -149,6 +144,11 @@ html::-webkit-scrollbar {
     );
 }
 
+#center-star:hover{
+    filter:
+        drop-shadow(0 0 10px rgba(225, 235, 255, 1));
+}
+
 #center-star::after {
     transform: rotate(45deg) scale(0.7);
     opacity: 0.8;
@@ -161,6 +161,7 @@ html::-webkit-scrollbar {
     visibility: hidden;
     align-items: center;
     display: flex;
+    padding:10px;
 }
 
 .about-overlay:target {
@@ -173,4 +174,31 @@ html::-webkit-scrollbar {
 
 .about-overlay p{
     color:#f5f8ff;
+}
+
+#center-labels {
+    position: absolute;
+}
+
+#center-labels span {
+    transform: translate(-50%, -40%);
+    position: inherit;
+    color:#e2c894;
+    font-family: 'Courier New';
+    font-size: 36px;
+    opacity: 0;
+}
+
+#hero:has(#library-star:hover) #library-label,
+#hero:has(#timeline-star:hover) #timeline-label,
+#hero:has(#rationale-star:hover) #rationale-label,
+#hero:has(#clusters-star:hover) #clusters-label{
+    opacity: 1;
+}
+
+#hero:has(#library-star:hover) #center-star,
+#hero:has(#timeline-star:hover) #center-star,
+#hero:has(#rationale-star:hover) #center-star,
+#hero:has(#clusters-star:hover) #center-star {
+    opacity: 0;
 }
