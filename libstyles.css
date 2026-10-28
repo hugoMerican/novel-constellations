@@ -7,7 +7,7 @@ body {
 #library {
     columns: 160px;
     padding: 60px 35px;
-    padding-top: 75px;
+    padding-top: 100px;
 }
 
 .book {
@@ -33,7 +33,7 @@ body {
     width: 90px;
     height: 90px;
 
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -38%);
 
     filter: drop-shadow(0 0 6px rgba(220, 235, 255, 0.6));
 }
