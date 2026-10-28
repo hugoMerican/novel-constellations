@@ -33,7 +33,7 @@ body {
     width: 90px;
     height: 90px;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
 
     filter: drop-shadow(0 0 6px rgba(220, 235, 255, 0.6));
 }
