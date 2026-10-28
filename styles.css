@@ -15,6 +15,7 @@ html::-webkit-scrollbar {
             rgba(4, 8, 14, 0.7)
         ),
         url("assets/background-stars.jpg");
+    height:100%;
 }
 
 #hero{

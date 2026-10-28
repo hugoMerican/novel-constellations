@@ -104,6 +104,11 @@ html::-webkit-scrollbar {
     color: #f5f8ff;
     visibility: hidden;
 }
+.year:nth-child(even) .info {
+    top: calc(50% + 45px);
+    transform: translateX(-50%);
+}
+
 .info span{
     color: #e2c894
 }
