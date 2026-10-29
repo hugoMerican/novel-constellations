@@ -122,9 +122,17 @@ html::-webkit-scrollbar {
     width: 200px;
     height: auto;
 }
-.star:hover + .info,
-.star:focus + .info {
+.star:hover ~ .info,
+.star:focus ~ .info {
     opacity: 1;
     visibility: visible;
 }
 
+.year-label {
+    position: absolute;
+    top: 50px;
+    color: #e2c894;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
