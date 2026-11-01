@@ -43,9 +43,7 @@ html::-webkit-scrollbar {
 }
 #center-star:hover{
     filter:
-        drop-shadow(0 0 10px rgba(220, 235, 255, 0.9))
-        drop-shadow(0 0 25px rgba(180, 210, 255, 0.6))
-        drop-shadow(0 0 40px rgba(180, 210, 255, 0.3));
+        drop-shadow(0 0 10px rgba(225, 235, 255, 1));
 }
 
 
@@ -112,6 +110,7 @@ html::-webkit-scrollbar {
 }
 .year:nth-child(even) .info {
     top: calc(50% + 45px);
+    bottom: auto;
     transform: translateX(-50%);
 }
 
@@ -122,11 +121,6 @@ html::-webkit-scrollbar {
     width: 200px;
     height: auto;
 }
-.star:hover ~ .info,
-.star:focus ~ .info {
-    opacity: 1;
-    visibility: visible;
-}
 
 .year-label {
     position: absolute;
@@ -135,4 +129,72 @@ html::-webkit-scrollbar {
     font-family: Georgia, serif;
     font-size: 14px;
     letter-spacing: 2px;
+}
+
+.year:hover .info,
+.year:focus-within .info {
+    visibility: visible;
+}
+
+.book-link {
+    text-align: center;
+    text-decoration: none;
+    color: #f5f8ff;
+    display: block;
+}
+
+.book-link:hover img {
+    transform: scale(1.05);
+}
+
+/* Keep the path from each star to its book inside the hover area. */
+.info::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 25px;
+}
+
+.year:nth-child(even) .info::before {
+    top: auto;
+    bottom: 100%;
+}
+
+.year:hover,
+.year:focus-within {
+    z-index: 1;
+}
+
+.book-link:focus-visible {
+    outline: 2px solid #e2c894;
+    outline-offset: 5px;
+}
+
+.book-placeholder {
+    box-sizing: border-box;
+    width: 200px;
+    aspect-ratio: 2 / 3;
+    display: grid;
+    place-content: center;
+    border: 1px dashed rgba(226, 200, 148, 0.6);
+    border-radius: 3px;
+    background: #0a111c;
+    color: #e2c894;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+.book-placeholder p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Keep the final year's card within the right edge of the timeline. */
+.year:last-child .info {
+    left: auto;
+    right: 0;
+    width: 200px;
+    transform: none;
 }

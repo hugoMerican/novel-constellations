@@ -1,27 +1,60 @@
+
 {
     "books": [
         {
             "id": "lotm",
-            "title": "Lord of The Mysteriess",
-            "coverUrl": "assets/books/LOTM.png",
-            "blurb": "Worldbuilding. Worldbuilding. WORLDBUILDING. Never before have I ever experienced a world that felt so alive.",
-            "personalNote": "Worldbuilding. Worldbuilding. WORLDBUILDING. Never before have I ever experienced a world that felt so alive.",
+            "title": "Lord of the Mysteries",
+            "coverUrl": "assets/books/lotm.jpg",
+            "content": "An absolute masterclass in worldbuilding. This story and world has forever changed my relationship with fantasy, as I am forever just looking for something to match the intense emotions and connection I feel towards this world and characters. This book found me at a time where I was slipping away from literature as a whole and pulled me right back into it and for that I will be forever grateful.",
             "featured": true
         },
         {
             "id": "reverend-insanity",
             "title": "Reverend Insanity",
             "coverUrl": "assets/books/reverend-insanity.png",
-            "blurb": "The philosophical takes in the story itself is fairly subpar, however the forward thinking involved propel this novel to unseen heights",
-            "personalNote": "The philosophical takes in the story itself is fairly subpar, however the forward thinking involved propel this novel to unseen heights",
+            "content": "An incredible story sadly left unfinished. Yes the worldbuilding is excellent and the characters are well written, but the plot that seems to have every single thread thoroughly thought through",
             "featured": true
         },
         {
-            "id": "mol",
-            "title": "Mother of Learning",
-            "coverUrl": "assets/books/MOL.jpeg",
-            "blurb": "As the title may suggest, the core theme of hardwork and effort is not lost, however the true \"magic\" comes from how fantastic the character work is, particularly the growth of our main character",
-            "personalNote": "As the title may suggest, the core theme of hardwork and effort is not lost, however the true \"magic\" comes from how fantastic the character work is, particularly the growth of our main character",
+            "id": "born-a-crime",
+            "title": "Born A Crime",
+            "coverUrl": "covers/43-born-a-crime.jpg",
+            "content": "",
+            "featured": true
+        },
+        {
+            "id": "speaker-for-the-dead",
+            "title": "Speaker For The Dead",
+            "coverUrl": "covers/38-speaker-for-the-dead.jpg",
+            "content": "A book that I can comfortably say had the intricacies and novelty fly over my head when I first read it. Definitely benefited from a second read where the implications of the story had a deeper impact.",
+            "featured": true
+        },
+        {
+            "id": "animal-farm",
+            "title": "Animal Farm",
+            "coverUrl": "covers/32-animal-farm.jpg",
+            "content": "Easy introduction to the concept of greed is evil, with simple language that makes the themes feel even more unnerving. I was forced to read this short story by my english teacher, and what I can say about it now is that I will be forcing my own children to read it.",
+            "featured": true
+        },
+        {
+            "id": "atonement",
+            "title": "Atonement",
+            "coverUrl": "covers/02-atonement.jpg",
+            "content": "An excellent example of an unreliable narrator, and a book that reads better on multiple reads. Massive chunks of the novel simply do not occur whatsoever.",
+            "featured": true
+        },
+        {
+            "id": "the-handmaids-tale",
+            "title": "The Handmaids Tale",
+            "coverUrl": "covers/03-the-handmaids-tale.jpg",
+            "content": "A book that gets much better when looked at through an analytical lense. Many references and deeper themes were originally lost on me during a casual read were put to the forefront when the book was taken apart piece by piece.",
+            "featured": true
+        },
+        {
+            "id": "steel-ball-run",
+            "title": "Steel Ball Run",
+            "coverUrl": "covers/45-steel-ball-run.jpg",
+            "content": "",
             "featured": true
         }
     ]
