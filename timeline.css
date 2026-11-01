@@ -8,44 +8,6 @@ body {
 html::-webkit-scrollbar {
     display: none;
 }
-#center-star {
-    position: absolute;
-    top: 4%;
-    left: 50%;
-    width: 90px;
-    height: 90px;
-    transform: translate(-50%, -38%);
-    filter: drop-shadow(0 0 6px rgba(220, 235, 255, 0.6));
-}
-
-#center-star::before,
-#center-star::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: #f5f8ff;
-
-    clip-path: polygon(
-        50% 0%,
-        54% 44%,
-        100% 50%,
-        54% 56%,
-        50% 100%,
-        46% 56%,
-        0% 50%,
-        46% 44%
-    );
-}
-
-#center-star::after {
-    transform: rotate(45deg) scale(0.7);
-    opacity: 0.8;
-}
-#center-star:hover{
-    filter:
-        drop-shadow(0 0 10px rgba(225, 235, 255, 1));
-}
-
 
 #timeline {
     width: 100%;
@@ -147,54 +109,3 @@ html::-webkit-scrollbar {
     transform: scale(1.05);
 }
 
-/* Keep the path from each star to its book inside the hover area. */
-.info::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    height: 25px;
-}
-
-.year:nth-child(even) .info::before {
-    top: auto;
-    bottom: 100%;
-}
-
-.year:hover,
-.year:focus-within {
-    z-index: 1;
-}
-
-.book-link:focus-visible {
-    outline: 2px solid #e2c894;
-    outline-offset: 5px;
-}
-
-.book-placeholder {
-    box-sizing: border-box;
-    width: 200px;
-    aspect-ratio: 2 / 3;
-    display: grid;
-    place-content: center;
-    border: 1px dashed rgba(226, 200, 148, 0.6);
-    border-radius: 3px;
-    background: #0a111c;
-    color: #e2c894;
-    text-align: center;
-    font-family: Georgia, serif;
-}
-
-.book-placeholder p {
-    margin: 0;
-    font-size: 16px;
-}
-
-/* Keep the final year's card within the right edge of the timeline. */
-.year:last-child .info {
-    left: auto;
-    right: 0;
-    width: 200px;
-    transform: none;
-}

@@ -1,0 +1,13 @@
+
+body {
+    background-color: #04080e;
+    background-image:
+        linear-gradient(
+            rgba(4, 8, 14, 0.7),
+            rgba(4, 8, 14, 0.7)
+        ),
+        url("assets/background-stars.jpg");
+
+    background-repeat: repeat;
+    background-attachment: fixed;
+}

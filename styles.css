@@ -28,14 +28,16 @@ html::-webkit-scrollbar {
 
 @keyframes rotateCircle {
     from {
-        transform: scale(1.4) rotate(0deg);
+        transform: scale(var(--circle-scale)) rotate(0deg);
     }
     to {
-        transform: scale(1.4) rotate(360deg);
+        transform: scale(var(--circle-scale)) rotate(360deg);
     }
 }
 
 #circle {
+    --circle-scale: 1.4;
+
     width: 500px;
     height: 500px;
     border: 1px solid #e2c894;
@@ -207,4 +209,24 @@ html::-webkit-scrollbar {
 #hero:has(#rationale-star:hover) #center-star,
 #hero:has(#clusters-star:hover) #center-star {
     opacity: 0;
+}
+
+@media (max-width: 800px) {
+    #circle {
+        --circle-scale: 0.85;
+    }
+}
+
+@media (max-width: 600px) {
+    #circle {
+        --circle-scale: 0.55;
+    }
+    .about-overlay {
+        padding: 20px;
+    }
+
+    .about-overlay h1,
+    .about-overlay p {
+        transform: none;
+    }
 }
