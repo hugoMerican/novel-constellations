@@ -28,7 +28,7 @@ bookList.forEach(book => {
         dialog.showModal();
     }
 
-    book.addEventListener("click", openBook);
+book.addEventListener("click", openBook);
 });
 
 document.getElementById("close-dialog")

@@ -9,6 +9,7 @@ async function loadBook() {
 
     document.title = book.title;
 
+    // Per-book cover source comments are beside #cover in book.html.
     document.getElementById("cover").src = book.coverUrl;
     document.getElementById("cover").alt = book.title;
     document.getElementById("title").textContent = book.title;
